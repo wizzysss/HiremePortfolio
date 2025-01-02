@@ -1,0 +1,95 @@
+---
+import Welcome from '../components/Welcome.astro';
+import Layout from '../layouts/Layout.astro';
+---
+<title>DontRejectMe</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
+
+<Layout client:load>
+  <div class="title">
+    <h1>WIZZYS</h1>
+    <h3>aka Aravindh Loganathan</h3>
+  </div>
+  <div class="image"> <img src="/public/ara.png" alt=""></div>
+ 
+</Layout>
+
+<style>
+  .syne-<uniquifier> {
+    font-family: "Syne", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+  .image{
+	
+	position: absolute;
+	left: 60%;
+	bottom: -1%;
+  }
+  img{
+	background-image: radial-gradient(rgba(172, 255, 47, 0.182), rgba(25, 25, 25, 0.545), rgba(0, 0, 0, 0));
+	width: 30rem;
+  }
+  
+  .title {
+    width: 50rem;
+  }
+
+  h1,
+  h3 {
+    color: rgb(233, 233, 233);
+    font-family: Syne;
+    margin-left: 25%;
+  }
+
+  h1 {
+    margin-bottom: 0;
+    font-size: 110px;
+  }
+
+  h3 {
+    margin-top: 5px;
+    font-size: 40px;
+    color: rgba(172, 255, 47, 0.87);
+  }
+
+  @media (max-width: 768px) {
+    .title {
+      width: 80%;
+    }
+
+    h1 {
+      font-size: 80px;
+    }
+
+    h3 {
+      font-size: 30px;
+    }
+
+    .image img {
+      width: 20rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .title {
+      width: 100%;
+      padding: 0 10px;
+    }
+
+    h1 {
+      font-size: 60px;
+    }
+
+    h3 {
+      font-size: 24px;
+    }
+
+    .image img {
+      width: 15rem;
+    }
+  }
+</style>

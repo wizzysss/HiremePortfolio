@@ -1,0 +1,46 @@
+---
+import Welcome from '../components/Welcome.astro';
+import Layout from '../layouts/Layout.astro';
+---
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
+
+<Layout client:load>
+  <div class="title">
+    <h1>About</h1>
+    <h3>aka Aravindh Loganathan</h3>
+  </div>
+</Layout>
+
+<style>
+  .syne-<uniquifier> {
+    font-family: "Syne", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+  
+  .title {
+    width: 50rem;
+  }
+
+  h1,
+  h3 {
+    color: white;
+    font-family: Syne;
+    margin-left: 25%;
+  }
+
+  h1 {
+    margin-bottom: 0;
+    font-size: 110px;
+  }
+
+  h3 {
+    margin-top: 5px;
+    font-size: 40px;
+    color: greenyellow;
+  }
+</style>
